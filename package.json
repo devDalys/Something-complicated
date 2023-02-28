@@ -9,7 +9,8 @@
     "build:dev": "npx webpack --env mode=development",
     "lint:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lintcss:fix": "npx stylelint \"**/*.scss\" --custom-syntax postcss-scss --fix",
-    "lintcss:check": "npx stylelint \"**/*.scss\""
+    "lintcss:check": "npx stylelint \"**/*.scss\"",
+    "test": "jest --config ./config/jest/jest.config.ts"
   },
   "keywords": [],
   "author": "",
@@ -72,7 +73,7 @@
     "style-loader": "^3.3.1",
     "stylelint": "^14.5.3",
     "stylelint-config-standard-scss": "^3.0.0",
-    "ts-loader": "^9.2.6",
+    "ts-loader": "^9.2.7",
     "ts-node": "^10.5.0",
     "typescript": "^4.9.5",
     "webpack": "^5.69.1",

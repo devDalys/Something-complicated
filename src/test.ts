@@ -1,3 +1,6 @@
-export function someFn () {
-  console.log('some text')
-}
+describe('test', () => {
+  test('test', () => {
+    expect(true).toBe(true)
+    console.log('Инициализационный тест')
+  })
+})
