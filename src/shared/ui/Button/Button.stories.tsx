@@ -1,7 +1,7 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import { Button } from './Button'
+import {Button, ThemeButton} from './Button'
 
 export default {
   title: 'shared/Button',
@@ -14,24 +14,19 @@ export default {
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
 
 export const Primary = Template.bind({})
+export const Clear = Template.bind({})
+
+export const Outline = Template.bind({})
+Outline.args = {
+  children: 'Text',
+  theme: ThemeButton.OUTLINE
+}
+
 Primary.args = {
-  primary: true,
-  label: 'Button'
+  children: 'Text'
 }
 
-export const Secondary = Template.bind({})
-Secondary.args = {
-  label: 'Button'
-}
-
-export const Large = Template.bind({})
-Large.args = {
-  size: 'large',
-  label: 'Button'
-}
-
-export const Small = Template.bind({})
-Small.args = {
-  size: 'small',
-  label: 'Button'
+Clear.args = {
+  children: 'Text',
+  theme: ThemeButton.CLEAR
 }
