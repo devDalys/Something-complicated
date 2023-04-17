@@ -6,15 +6,11 @@ i18n
     .init({
         lng: 'ru',
         fallbackLng: 'ru',
-
-        // have a common namespace used around the full app
-
         debug: false,
 
         interpolation: {
             escapeValue: false, // not needed for react!!
         },
-
         resources: { ru: { translations: {} } },
     });
 
